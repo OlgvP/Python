@@ -1,6 +1,6 @@
 # Python challenges and exercises
 
-### Return the day
+### Return the day:
 
 **Complete the function which returns the weekday according to the input number:**
 ```
