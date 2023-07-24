@@ -1,8 +1,8 @@
 ### Regex
 
-1. Create a regex that finds integers without size limit.
+**1. Create a regex that finds integers without size limit.**
 
-s = "sssgdds8sfsfs"
+**s = "sssgdds8sfsfs"**
 
 ```
 import re
@@ -11,9 +11,9 @@ s = "sssgdds8sfsfs"
 print(re.findall("([0-9]+)", s))
 ```
 
-2. Create a regex that finds negative integers without size limit.
+**2. Create a regex that finds negative integers without size limit.**
 
-s = "sssgdds-8sfsfs"
+**s = "sssgdds-8sfsfs"**
 
 ```
 import re
@@ -21,7 +21,7 @@ s = "sssgdds-8sfsfs"
 print(re.findall("(-?[0-9]+)", s))
 ```
 
-3. Create a regex that finds (positive or negative) integers without size limit.
+**3. Create a regex that finds (positive or negative) integers without size limit.**
 
 ```
 import re
@@ -30,10 +30,10 @@ s = "sssgdds-8s8fsfs"
 print(re.findall("(-?[0-9]+?)", s))
 ```
 
-4. Capture all the numbers of the following sentence :
+**4. Capture all the numbers of the following sentence :**
 
 
-text = "21 scouts and 3 tanks fought against 4,003 protestors, so the manager was not 100.00% happy."
+**text = "21 scouts and 3 tanks fought against 4,003 protestors, so the manager was not 100.00% happy."**
 
 ```
 import re
@@ -45,9 +45,9 @@ print(numbers)
 ``` 
 
 
-5. Find all words that end with 'ly'.
+**5. Find all words that end with 'ly'.**
 
-text = "He had prudently disguised himself but was quickly captured by the police."
+**text = "He had prudently disguised himself but was quickly captured by the police."**
 
 ```
 import re
@@ -58,11 +58,11 @@ result = re.findall(x, text)
 print(result)
 ```
 
-6. License plate number.
+**6. License plate number.**
 
-A license plate consists of 2 capital letters, a dash ('-'), 3 digits, a dash ('-') and finally 2 capital letters.
+**A license plate consists of 2 capital letters, a dash ('-'), 3 digits, a dash ('-') and finally 2 capital letters.
 Write a script to check that an input string is a license plate.
-If it's correct, print "good". If it's not correct, print "Not good".
+If it's correct, print "good". If it's not correct, print "Not good".**
 
 ```
 import re
@@ -77,10 +77,10 @@ while True:
 ```
 
 
-7 . Address IPV4.
+**7 . Address IPV4.**
 
-An IPv4 address is composed of 4 numbers between 0 and 255 separated by '.'
-Write a script to verify that a string entered is that of an IPv4 address.
+**An IPv4 address is composed of 4 numbers between 0 and 255 separated by '.'
+Write a script to verify that a string entered is that of an IPv4 address.**
 
 ```
 import re
@@ -97,11 +97,11 @@ else:
     print("It is NOT an IP address")
 ```	
 	
-8. Valid Mail
+**8. Valid Mail**
 
-An email is composed of alphanumeric characters followed by @ and a domain name.
+**An email is composed of alphanumeric characters followed by @ and a domain name.
 Write a script that checks that the string entered by a user is indeed that of an email,
-otherwise ask him to re-enter it again (until he gets a valid email).
+otherwise ask him to re-enter it again (until he gets a valid email).**
 
 ```
 import re
@@ -119,10 +119,10 @@ while True:
         break
 ```
 
-9. Valid Password
+**9. Valid Password**
 
-Write an additional script that verifies the password (obviously if the email is valid) 
-where the only specificity of the password is that it has to contain at least 6 characters.
+**Write an additional script that verifies the password (obviously if the email is valid) 
+where the only specificity of the password is that it has to contain at least 6 characters.**
 
 ```
 def valid_password():
@@ -151,19 +151,19 @@ while True:
         break
 ```
 
-10. Valid Password bis
+**10. Valid Password bis**
 
-The password must now contain at least 6 characters AND
+**The password must now contain at least 6 characters AND**
 
-at least one lowercase letter AND
+**at least one lowercase letter AND
 at least one uppercase letter AND
 at least one number AND
-at least one special character (among $#@).
+at least one special character (among $#@).**
 
-In this exercise we can use the same code as in last exercise but we
+***In this exercise we can use the same code as in last exercise but we
 need to just change the variable with regex (which we are comparing with password).
 In this case is variable y from function valid_password. 
-New variable:
+New variable:***
 
 ```
 y = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$#@]).{6,}$'
